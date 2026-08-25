@@ -3,11 +3,12 @@ repository:
 
 branches:
   main:
-    approvals: 2
+    approvals: 0
   dev:
-    approvals: 1
+    approvals: 0
 
-developers: []
+developers:
+  - wkzMagician     # 你的 GitHub 用户名
 
 ci:
   enabled: true
@@ -17,7 +18,7 @@ ai:
   provider:
     type: openai-compatible
     base_url: https://openrouter.ai/api/v1
-    model: xxx
+    model: deepseek/deepseek-v4-flash-0731
     api_key: secret:REPOFLOW_AI_API_KEY
   analysis:
     issues: true
